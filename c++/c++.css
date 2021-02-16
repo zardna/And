@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+*{
+    margin: 10px; /*this*/  /* daca le pun pe 0 */
+	padding: 10px; /*and this , eliminated all differences in padding and margin across browsers*/
+	list-style: none; /*delete the default dots from the lists items*/
+    font-family: 'Source Code Pro', monospace;
+}
+
+body{
+	background:ivory;
+}
