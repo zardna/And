@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Noto+Sans+JP:wght@300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0; /*this*/
+	padding: 0; /*and this , eliminated all differences in padding and margin across browsers*/
+	list-style: none; /*delete the default dots from the lists items*/
+	box-sizing: border-box; /*padding and border are included in the width and height*/
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+	background:#181f23;
+}
+
+.resume{
+	width: 1100px; 
+	margin: 50px auto; 
+	display: flex; /* --  ,  not | */
+}
+
+.left{
+	width: 270px; /*how much width will take the left part*/
+	padding: 0 35px;
+	text-transform: lowercase;
+}
+
+.right{
+	width: calc(100% - 270px);/*the right part is the entire screen minus the left part which here is 270px */
+
+}
+
+.left .img_holder{
+	text-align: left;
+	padding: 20px 0;
+}
+
+.left .img_holder img{
+	width: 330px;
+	border-radius: 15px;
+}
+
+.pb{
+	padding-bottom: 10px; /*space between hard skills and hobbies*/
+}
+
+.title{ /*contact, hard skills, hobbies, work experience, education*/
+	font-size: 22px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	padding: 15px 0;
+	color: #00917c;
+	text-align: left;
+	margin: 10px 0;
+	
+}
+
+#work {
+	padding-left: 40px;
+	padding-top: 66px;
+}
+
+#education {
+	padding-left: 40px;
+	padding-top: 20px;
+}
+
+.left .icon{
+	font-size: 14px;
+	color: #00917c;
+}
+
+/*contact text*/
+.left .text{
+	font-size: 14px;
+}
+.left .text :link{
+	color: #00917c;
+}
+.left .text :visited{
+	color: #00917c;
+}
+.left .text :hover {
+	font-size: 15px;
+}
+.left .text :active {
+	color: #fad586;
+}
+/*find a way to put them together*/
+/*alvet, iap, usamv*/
+.right_inner .li_wrap .text{
+	font-size: 14px;
+}
+.right_inner .li_wrap .text :link{
+	color: #00917c;
+}
+.right_inner .li_wrap .text :visited{
+	color: #00917c;
+}
+.right_inner .li_wrap .text :hover{
+	color: #00917c;
+}
+.right_inner .li_wrap .text :active{
+	color: #fad586;
+
+}
+
+
+.contact .li_wrap{ 
+	display: flex; /* puts text under icon*/
+	align-items: center;
+	width: 100%; /*text in compare to icon*/
+	margin-bottom: 10px; /*icons*/
+}
+
+.contact .li_wrap .icon{ /* ICONS */
+	width: 55px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid ivory;
+	border-radius: 15px;
+}
+
+.contact .li_wrap .text{
+	width: calc(100% - 55px); /*this*/
+	word-break: break-word; /*and this. important, wont let icon margins collapse*/
+	margin-left: 20px;
+	color: ivory;
+}
+
+
+/*HARD SKILLS*/
+.skills .li_wrap{
+	border: 1px solid ivory;
+}
+
+.skills .li_wrap .icon,
+.skills .li_wrap .text{
+	color: #fad586;
+}
+
+.skills .li_wrap:hover{
+	background: ivory;
+	
+}
+
+.skills .li_wrap:hover .icon,
+.skills .li_wrap:hover .text{
+	color: #fad586;
+	font-size: 17px;
+}
+
+.skills ul,
+.hobbies ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+
+.skills .li_wrap,
+.hobbies .li_wrap {
+	width: 90px;
+	height: 80px;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.hobbies .li_wrap{
+	border: 1px solid ivory;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text{
+	color: #fad586;
+}
+
+.hobbies .li_wrap:hover{
+	background: ivory;
+}
+
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text{
+	color: #fad586;
+	font-size: 17px;
+}
+
+
+
+.header{
+	border: 1px solid #fad586;
+	border-radius: 15px;
+	padding: 15px 35px 15px 150px;
+	height: 240px;
+	text-align: left;
+}
+
+.header .name{
+	font-size: 43px;
+	font-weight: 700;
+	color: #00917c;
+	text-align: left;
+}
+
+
+
+.header .role{
+	font-weight: 300;
+	font-size: 20px;
+	text-align: left;
+	color: ivory;
+}
+
+.header .about{
+	margin-top: 20px;
+	line-height: 26px;
+	color: ivory;
+}
+
+
+
+
+.right_inner .education{
+	margin-top: 30px;
+}
+
+.right_inner .li_wrap{
+	display: flex;
+	margin-bottom: 15px;
+	padding-left: 30px;
+}
+
+.right_inner .li_wrap .date {
+    width: 90px;
+    color: #fad586;
+	text-align: center;
+}
+
+.right_inner .li_wrap .info{
+	width: calc(100%  - 125px);
+	padding-left: 25px;
+	position: relative;
+	text-align:justify;
+}
+
+.right_inner .li_wrap .info_title{
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #fad586;
+	
+
+}
+
+.right_inner .li_wrap .info_com{
+	font-weight: 800;
+	font-size: 14px;
+	margin-top: 15px;
+	color: ivory;
+}
+
+.right_inner .li_wrap .info_cont{
+	margin-top: 15px;
+	color: ivory;
+}
+
+/*bullet*/
+.right_inner .li_wrap .info:before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	width: 10px;
+	height: 10px;
+	background: #fad586;
+	border-radius: 50%;
+}
+/*line*/
+.right_inner .li_wrap .info:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 95%;
+	background: #fad586;
+} 
+
+
