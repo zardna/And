@@ -1,4 +1,4 @@
 # And
-myR3PO
+myCV
 
 This is my CV written in HTML and CSS.
